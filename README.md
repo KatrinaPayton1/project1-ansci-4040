@@ -14,11 +14,11 @@ The goal of this project is to work with the project dataset that is currently m
 
 ## Timeline
 
-This project will take place over approximately 4 weeks, with the following timeline:
+This project will take place over 4 weeks, with the following timeline:
 
 ### Week 1 (9/15-9/22): Setup and understand data
 - Create public repository
-- Set up the notebook workflow for inspection
+- Set up the notebook  for inspection
 - Confirm the dataset structure and file format
 - Run an initial exploratory data analysis
 - Identify data quality problems, missing values, and schema issues
@@ -43,10 +43,7 @@ This project will take place over approximately 4 weeks, with the following time
 ## Strategy and Brainstorm
 
 ### Model choice
-The best model depends on the target variable and the structure of the dataset. I plan to start with a simple, interpretable baseline such as logistic regression for classification or linear regression for continuous outcomes, depending on the project goal. If that is not sufficient, I will compare it against a stronger model such as a random forest or gradient boosting method.
-
-The key principle is to begin with a simple and interpretable model before moving to more complex methods. This keeps the workflow easier to explain and makes it easier to diagnose problems.
-
+The best model depends on the target variable and the structure of the dataset. I plan to start with a  baseline **logistic regression** for classification . This model works well for tabular data,  mixed variable types, and nonlinear relatinships.
 ### Testing approach
 I will include the following checks throughout the project:
 - verify the dataset schema and variable types
@@ -55,26 +52,12 @@ I will include the following checks throughout the project:
 - compare performance with clear evaluation metrics
 - confirm that the model output is reasonable and not just overfit to noise
 
-### Data lineage
-To keep the project reproducible, I will track the flow of the data from raw file to final modeled output:
+### Data lineage/Reproducibility
+I plan to keep the project reproducible, by tracking the flow of the data from raw file to final modeled output:
 - keep the original dataset in the repo or a clearly labeled raw-data folder
-- document any cleaning decisions in notebooks or scripts
+- document any cleaning decisions in notebooks
 - save processed versions with meaningful names
-- track major transformations and keep the workflow version controlled with Git
+- Make commits as I edit and version controlled with Git
 
-This is important because it makes it easier to explain how results were produced and debug any issues if the analysis changes over time.
+- use markdown cells to label assumptions and explanations 
 
-### Reproducibility and documentation
-- Keep notebooks organized by stage: inspection, cleaning, modeling, evaluation
-- Use clear markdown notes to explain model choices and assumptions
-- Save key plots and summary tables for later review
-- Keep code version-controlled so results can be regenerated
-
-## Wednesday Discussion Preparation
-
-Before Wednesday, I will prepare the following:
-- a quick summary of the dataset and variables
-- the list of candidate modeling approaches
-- a description of data quality issues or assumptions
-- a plan for testing and validation
-- a clear decision on whether a local or cloud workflow is more appropriate
