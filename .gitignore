@@ -188,8 +188,9 @@ cython_debug/
 #   option (not recommended) you can uncomment the following to ignore the entire idea folder.
 # .idea/
 
-# Project dataset
+# Local project data and generated report
 Data_set_prep_assignment_1.csv
+data_profile_report.html
 
 # Abstra
 #   Abstra is an AI-powered process automation framework.
