@@ -43,11 +43,10 @@ This project will take place over 4 weeks, with the following timeline:
     10% Test
 - Important considerations for this split: To prevent data leakage, it is best to split by time, removing future dates from trianing. This will prevent the model from using known dates to assist with its prediction. 
 - Plan for the split: 
-    1. Sort by date
-    2. Split by time order only
-    3. Keep the most recent dates in the test set (10%)
-    4. Use earlier dates for training (70%)
-    5. Use a validation window between them (20%)
+    1. Sort by date and cow, and split ensuring each cow in test set represented in training set
+    2. Keep the most recent dates in the test set (10%)
+    3. Use earlier dates for training (70%)
+    4. Use a validation window between them (20%)
 
 
 ### Week 3 (9-29-10/06): Baseline modeling, refining, and validation
@@ -63,7 +62,9 @@ This project will take place over 4 weeks, with the following timeline:
 ## Strategy and Brainstorm
 
 ### Model choice
-The best model depends on the target variable and the structure of the dataset. I plan to start with a **RandomForest** tree-based model, which takes predictions of multiple individual decision trees through bagging and feature randomness, and combines them to fill in the target variable, which I define as AnimalId.
+The best model depends on the target variable and the structure of the dataset. I plan to start with a **RandomForestClassification** tree-based model, which takes predictions of multiple individual decision trees through bagging and feature randomness, and combines them to fill in the target variable, which I define as AnimalId.
+
+IMPORTANT NOTE: This model does not work for predicting new cows not identifiable in the training set, and thus this model would not be transferable to a new farm.  
 
 ### Testing approach
 I will include the following checks throughout the project:
