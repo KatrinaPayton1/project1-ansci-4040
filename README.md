@@ -51,7 +51,7 @@ This project will take place over 4 weeks, with the following timeline:
 
 
 ### Week 3 (9-29-10/06): Baseline modeling, refining, and validation
-- Train a simple baseline model (logistic regression) using milk flow rates (outcome variable)
+- Train a RandomForest tree-based model
 - Check performance: accuracy, classification metrics
 - Review error patterns: check whether failures happen in recent dates or specific groups
 - - confirm that the model output is reasonable and not just overfit to noise
@@ -63,7 +63,7 @@ This project will take place over 4 weeks, with the following timeline:
 ## Strategy and Brainstorm
 
 ### Model choice
-The best model depends on the target variable and the structure of the dataset. I plan to start with a  baseline **logistic regression** for classification . This model works well for tabular data,  mixed variable types, and nonlinear relatinships.
+The best model depends on the target variable and the structure of the dataset. I plan to start with a **RandomForest** tree-based model, which takes predictions of multiple individual decision trees through bagging and feature randomness, and combines them to fill in the target variable, which I define as AnimalId.
 
 ### Testing approach
 I will include the following checks throughout the project:
