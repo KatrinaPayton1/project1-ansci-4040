@@ -36,7 +36,7 @@ This project will take place over 4 weeks, with the following timeline:
     2. Decide to either remove or fill the values in these rows through taking averages etc. (I removed them due to small percentage)
 
 *Prepare training, testing and validation data splits*
-- After cleaning, the data set was reduced from about 8 million rows to 6.7 million.
+- After cleaning, the data set was reduced from about 8.4 million rows to 8.2 million.
 - The planned split is as follows
     70% Train data
     20% Internal validation data  ------- External Validation will be excluded from this set
