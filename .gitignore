@@ -191,6 +191,13 @@ cython_debug/
 # Local project data and generated report
 Data_set_prep_assignment_1.csv
 data_profile_report.html
+clean_data_no_missing.csv
+clean_data.csv
+missing_data.csv
+raw_data.csv
+test_data.csv
+train_data.csv
+val_data.csv
 
 # Abstra
 #   Abstra is an AI-powered process automation framework.
