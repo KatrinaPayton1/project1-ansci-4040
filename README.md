@@ -50,10 +50,16 @@ This project will take place over 4 weeks, with the following timeline:
 
 
 ### Week 3 (9-29-10/06): Baseline modeling, refining, and validation
-- Train a RandomForest tree-based model
-- Check performance: accuracy, classification metrics
+- Train a RandomForestClassification tree-based model
+- Check validation set performance: accuracy, classification metrics
 - Review error patterns: check whether failures happen in recent dates or specific groups
-- - confirm that the model output is reasonable and not just overfit to noise
+- Optimize hyperparameters with a grid search to improve accuracy and prevent overfitting 
+    *N_estimators*(numbers of trees... more to be stable)
+    *max_depth* (depth of tree growth... closer data fitting)
+    *min_samples_split* (min samples to split internal node... higher values are conservative)
+    *min_samples_leaf* (min samples that must be in leaf node... higher values for less complexity)
+- Use test data set with model and assess accuracy
+confirm that the model output is reasonable and not just overfit to noise
 
 ### Week 4: Final Presentation
 - Prepare the final results, charts, and interpretation
