@@ -7,7 +7,7 @@ This repository is a workspace for Project 1 of ANSC 4040.
 The goal of this project is to work with the project dataset that is currently missing table values with an end goal of matching each cow to their statistics and predicting the remaining values. To do so, I must use skills that I have learned thus far in this course to, clean and inspect the data, build a reproducible modeling workflow, and summarize the findings in a clear and defensible way. 
 
 ## Working Environment (Local vs. Cloud)
-- Primary approach: local development, commiting changes to the cloud
+- Primary approach: local environment, commiting changes to the cloud
 - IDE: VS Code
 - Language: Python
 - Tools: Jupyter notebooks, pandas, Git
@@ -36,7 +36,7 @@ This project will take place over 4 weeks, with the following timeline:
     2. Decide to either remove or fill the values in these rows through taking averages etc. (I removed them due to small percentage)
 
 *Prepare training, testing and validation data splits*
-- After cleaning, the data set was reduced from about 8.4 million rows to 8.2 million.
+- After cleaning, the data set was reduced from about 8.4 million rows to 6.6 million.
 - The planned split is as follows
     70% Train data
     20% Internal validation data  ------- External Validation will be excluded from this set
@@ -52,7 +52,6 @@ This project will take place over 4 weeks, with the following timeline:
 ### Week 3 (9-29-10/06): Baseline modeling, refining, and validation
 - Train a RandomForestClassification tree-based model
 - Check validation set performance: accuracy, classification metrics
-- Review error patterns: check whether failures happen in recent dates or specific groups
 - Optimize hyperparameters with a grid search to improve accuracy and prevent overfitting 
     *N_estimators*(numbers of trees... more to be stable)
     *max_depth* (depth of tree growth... closer data fitting)
@@ -64,8 +63,6 @@ confirm that the model output is reasonable and not just overfit to noise
 ### Week 4: Final Presentation
 - Prepare the final results, charts, and interpretation
 - Summarize the methods and conclusions in a clear poster 
-
-## Strategy and Brainstorm
 
 ### Model choice
 The best model depends on the target variable and the structure of the dataset. I plan to start with a **RandomForestClassification** tree-based model, which takes predictions of multiple individual decision trees through bagging and feature randomness, and combines them to fill in the target variable, which I define as AnimalId.
