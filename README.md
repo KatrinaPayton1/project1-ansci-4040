@@ -84,3 +84,11 @@ I plan to keep the project reproducible, by tracking the flow of the data from r
 - save processed versions with meaningful names
 - Make commits as I edit and version controlled with Git
 - use markdown cells to label assumptions and explanations 
+
+
+
+### Project #1 Relfection 
+- This Project was incredibly helpful for me to learn about the entire process of a data science project. I saved my model and made a new notebook to put it to the test with the practice data set to replicate a real life farm scenario. 
+- The original model was too large to save, so I had to adjust hyhperparameters to reduce the memory use. I loaded the model and ran the new dataset (preprocessed with the same z-score parameters that the model was trained on). The new CSV file was created assigning each predicted animalID to milkingID.
+- The class website produced that my model had an accuracy of 0%
+- To reflect and conclude, this model would not be practicle for a farm setting
